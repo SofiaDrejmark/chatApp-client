@@ -12,7 +12,7 @@ import Stack from "react-bootstrap/Stack";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://sofia-chat-server.herokuapp.com");
 
 function App() {
   const [username, setUsername] = useState("");
