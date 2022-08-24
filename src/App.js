@@ -76,10 +76,7 @@ function App() {
     e.preventDefault();
   }
 
-  const leaveRoom = (room) => {
-    socket.emit("leave_room", room);
-    setRoom("");
-  };
+
 
   return (
     <Container>
