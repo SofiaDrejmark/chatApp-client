@@ -1,3 +1,4 @@
+import React from "react";
 import { io } from "socket.io-client";
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,6 +58,7 @@ function App() {
     console.log("join room");
     socket.emit("join_room", room);
     if (username !== "" && room !== "") {
+      console.log("no empty")
     }
     setCurrentRoom(room);
   };
