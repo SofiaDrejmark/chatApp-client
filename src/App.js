@@ -58,7 +58,7 @@ function App() {
     console.log("join room");
     socket.emit("join_room", room);
     if (username !== "" && room !== "") {
-      console.log("no empty")
+      console.log("no emptys")
     }
     setCurrentRoom(room);
   };
